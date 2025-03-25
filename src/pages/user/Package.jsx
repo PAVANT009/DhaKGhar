@@ -1,8 +1,8 @@
 import React from 'react';
-import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
+import { useNavigate } from "react-router-dom"; 
 
 function Packag({ orders }) {
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate(); 
 
   const handleClick = (orderId) => {
     navigate(`/order/${orderId}`);
@@ -12,9 +12,9 @@ function Packag({ orders }) {
     <div>
       {orders && orders.map((order, index) => (
         <div
-          key={index} // Make sure to provide a unique key for each item
+          key={index} 
           className="bg-white rounded-lg m-5 flex flex-col h-[65%] w-[100%] p-4 cursor-pointer overflow-hidden"
-          onClick={() => handleClick(order.id)} // Pass the correct order ID to the navigate function
+          onClick={() => handleClick(order.id)} 
         >
           <div className="flex flex-row px-4 justify-between">
             <p className="text-lg font-semibold">Order details</p>
