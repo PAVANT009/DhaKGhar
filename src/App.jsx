@@ -19,7 +19,7 @@ export default function App() {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await fetch("http://localhost/DEMO/orders.php");
+        const response = await fetch("http://dakghar.ct.ws/orders.php");
         const data = await response.json();
         setOrders(data);
         setLoading(false);
